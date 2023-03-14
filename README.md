@@ -74,3 +74,7 @@ aws s3 cp ./error.jpg s3://BUCKET_NAME/error.jpg
 cd infra
 terraform destroy
 ```
+
+# Note about uploading the file
+The static files could have been uploaded to s3 using terraform, but that causes issues with the files
+encoding, that why we upload them using the aws cli (you can also upload them from the console).

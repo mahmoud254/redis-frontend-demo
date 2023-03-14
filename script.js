@@ -1,4 +1,4 @@
-const BACKEND_URL = "http://localhost:3001"
+const BACKEND_URL = "http://a89403d27a08346f7ba83f2194c14259-1431587725.eu-central-1.elb.amazonaws.com:3000" // "http://localhost:3001"
 const ENDPOINT = "imagesHour"
 
 document.addEventListener("DOMContentLoaded", async () => {

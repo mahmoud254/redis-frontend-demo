@@ -121,3 +121,5 @@ crash.*.log
 ./infra/*.tfstate
 ./infra/*.tfstate.*
 ./infra/tfstate.*
+./infra/.terraform.lock.hcl
+.terraform.lock.hcl
