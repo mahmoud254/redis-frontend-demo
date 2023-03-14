@@ -56,7 +56,6 @@ terraform init
 ```
 
 ```bash
-cd infra
 terraform apply
 ```
 
