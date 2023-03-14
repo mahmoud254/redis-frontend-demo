@@ -69,7 +69,7 @@ module "cloudfront_module" {
     force_ssl = false
     use_waf =  false
     default_root_object = "index.html"
-    use_cache = true
+    use_cache = false
 }
 
 

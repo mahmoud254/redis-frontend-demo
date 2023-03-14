@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             url: `${BACKEND_URL}/${ENDPOINT}`,
             params: {}
         });
-        // console.log(res.data);
+        console.log(res.data);
         // console.log("-------------------");
         // console.log(res.status);
         if (res.status === 200) {
