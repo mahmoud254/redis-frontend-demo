@@ -49,7 +49,7 @@ data "aws_iam_policy_document" "s3_policy" {
 
     principals {
       type        = "AWS"
-      identifiers = [module.worpress_cloudfront.oai_arn]
+      identifiers = [module.cloudfront_module.oai_arn]
     }
   }
 }
@@ -59,7 +59,7 @@ resource "aws_s3_bucket_policy" "example" {
   policy = data.aws_iam_policy_document.s3_policy.json
 }
 
-module "worpress_cloudfront" {
+module "cloudfront_module" {
     source = "./cloudfront"
     env = "dev"
     origin_arn = aws_s3_bucket.example.arn
@@ -80,7 +80,7 @@ module "worpress_cloudfront" {
 # resource "aws_s3_bucket_policy" "example-policy" {
 #   bucket = aws_s3_bucket.example.bucket
 #   policy = templatefile("s3-policy.json",
-#     { bucket=var.BUCKET_NAME,account_id=var.ACCOUNT_ID, distrbution_id=module.worpress_cloudfront.distrbution_id}
+#     { bucket=var.BUCKET_NAME,account_id=var.ACCOUNT_ID, distrbution_id=module.cloudfront_module.distrbution_id}
 #   )
 # }
 
