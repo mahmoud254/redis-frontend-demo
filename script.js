@@ -1,4 +1,4 @@
-const BACKEND_URL = "http://k8s-default-nodejsba-4ea6c6e1fa-1315420194.eu-central-1.elb.amazonaws.com" // "http://localhost:3001"
+const BACKEND_URL = "http://k8s-default-soumsoum-47b83be7d6-1320410420.eu-central-1.elb.amazonaws.com" // "http://localhost:3001"
 const ENDPOINT = "imagesHour"
 
 document.addEventListener("DOMContentLoaded", async () => {
